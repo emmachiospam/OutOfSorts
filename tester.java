@@ -16,27 +16,27 @@ public class tester{
         for(int i = 0 ; i < randData.length; i++){
           randData[i] =(int)(Math.random()*10000);
         }
-	      System.out.println("when all values are random" + Arrays.toString(randData));
+	      System.out.println("when all values are random");
       }else if(args[2].equals("equal")){
         int setValue = (int)(Math.random()*10000);
         for(int i = 0 ; i < randData.length; i++){
           randData[i] = setValue;
         }
-	      System.out.println("when all values are equal" + Arrays.toString(randData));
+	      System.out.println("when all values are equal");
       }else if(args[2].equals("sorted")){
         int setValue = (int)(Math.random()*10000);
         for(int i = 0 ; i < randData.length; i++){
           setValue = setValue + (int)(Math.random()*1000);
           randData[i] = setValue;
         }
-	      System.out.println("when all values are already sorted" + Arrays.toString(randData));
+	      System.out.println("when all values are already sorted");
       }else if(args[2].equals("reversed")){
         int setValue = (int)(Math.random()*10000);
         for(int i = 0 ; i < randData.length; i++){
           setValue = setValue - (int)(Math.random()*1000);
           randData[i] = setValue;
         }
-	      System.out.println("when all values are reversed" + Arrays.toString(randData));
+	      System.out.println("when all values are reversed");
       }
 
       if(args[1].equals("bubble")){
