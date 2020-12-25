@@ -18,7 +18,7 @@ public class Sorts{
 
   public static void selectionSort(int[] data) {
     for(int i = 0; i < data.length; i++) {
-      int og = data[i];
+      int orig = data[i];
       int min = data[i];
       int minIndex = i;
       for(int j = i; j < data.length; j++) {
@@ -28,7 +28,7 @@ public class Sorts{
         }
       }
       data[i] = min;
-      data[minIndex] = og;
+      data[minIndex] = orig;
     }
   }
 
